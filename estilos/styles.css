@@ -11,13 +11,12 @@ body{
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: auto;
     z-index: -1;
 }
 .image-section{
     display: block;
     width: 100%;
-    height: auto;
+    height: 100dvh;
 }
 header{
     position: fixed;
@@ -71,4 +70,19 @@ header{
     padding: 8px;
     border-radius: 50%;
     cursor: pointer;
+}
+.curtina{
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: transparent;
+    pointer-events: none;
+}
+@media (max-width: 800px){
+
+    .image-section{
+        width: 100%;
+        height: 60dvh;
+    }
+
 }
